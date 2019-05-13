@@ -11,5 +11,6 @@
     #安装相关软件包
     yum install qemu-kvm libvirt virt-install virt-manager bridge-utils
     service libvirtd start
+    #创建网桥
     
 
