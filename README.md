@@ -13,4 +13,9 @@
     service libvirtd start
     #创建网桥
     
+    #创建安装磁盘
+    mkdir -p /media/sdb2/linux/kvm1
+        Formatting '/media/sdb2/linux/kvm1/centos74.img', fmt=qcow2 size=21474836480 encryption=off cluster_size=65536 
+
+    
 
