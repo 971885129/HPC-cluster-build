@@ -15,6 +15,7 @@
     
     #创建安装磁盘
     mkdir -p /media/sdb2/linux/kvm1
+    emu-img create -f qcow2 /var/linux/images/centos74.img 20G
         Formatting '/media/sdb2/linux/kvm1/centos74.img', fmt=qcow2 size=21474836480 encryption=off cluster_size=65536 
 
     
