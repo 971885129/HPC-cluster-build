@@ -13,6 +13,9 @@
     service libvirtd start
     #创建网桥
     
+    #下载镜像并loop到本地
+    mount -o loop ../CentOS-7-x86_64-DVD-1810.iso /var/kvmOS/
+
     #创建安装磁盘
     mkdir -p /media/sdb2/linux/kvm1
     qemu-img create -f qcow2 /var/linux/images/centos74.img 20G
