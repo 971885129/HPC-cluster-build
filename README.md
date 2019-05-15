@@ -64,3 +64,8 @@
     service libvirtd restart
     
 
+
+
+* KVM相关命令
+
+
