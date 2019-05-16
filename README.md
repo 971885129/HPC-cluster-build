@@ -120,9 +120,15 @@
             --console pty,target_type=serial \
             --location=/var/linux/CentOS-7-x86_64-Minimal-1810.iso \
             --extra-args 'console=ttyS0,115200n8 serial'
-** 存在问题 **
-    * 无法连接网络
+### 存在问题
 
+* 无法连接网络
+
+        #解决
+        设置/etc/resolv.conf DNS
+            nameserver 202.114.64.1
+        重启网络
+            service network restart
 
 
 * KVM相关命令
