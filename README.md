@@ -66,7 +66,12 @@
 * 环境准备
 
         getenforce    #检查SELinux是否关闭
+        找到/etc/selinux/config 文件把文件中的SELINUX=enforcing   改为SELINUXdisabled
+        重启
+        
         systemctl status firewalld.service   #检查
+        systemctl stop firewalld.service #关闭防火墙
+        systemctl disable firewalld.service #防止开机自动重启防火墙
         service NetworkManager stop 
 * 安装相关软件包
 
